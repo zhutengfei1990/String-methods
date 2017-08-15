@@ -27,3 +27,8 @@ var text='cat,bat'
 var pattern=/.at/g //.表示匹配除换行符之外的任何单个字符
 console.log(text.match(pattern)) //[ 'cat', 'bat' ]
 console.log(text.search(pattern)) //0 第一个匹配项的索引
+console.log(text.replace('at','ct')) //cct,bat,只替换第一个at
+console.log(text.replace(/at/g,'ct')) //cct,bct,替换所有at
+console.log(text.replace(/(.at)/g,"word--$1")) //$1表示第一个捕获组
+console.log(text.split('')) //[ 'c', 'a', 't', ',', 'b', 'a', 't' ]
+console.log(text.localeCompare('brick')) //1(cat,bat的首字母c排在字母b的后面，故为1)

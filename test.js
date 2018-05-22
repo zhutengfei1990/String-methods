@@ -1,3 +1,4 @@
+bug fixed
 new new new 
 hello world
 this is new add content
